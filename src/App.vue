@@ -1,11 +1,14 @@
 <script setup lang="ts">
 import HelloWorld from './components/HelloWorld.vue'
 import TheWelcome from './components/TheWelcome.vue'
-import Person from './components/Person.vue'
-
+import Navbar from './components/Navbar.vue'
+import Home from './components/Home.vue'
 </script>
 
 <template>
+    <div id="app" class="w-screen h-screen font-Montserrat">
+        <Home :nightMode=false />
+    </div>
     <!-- <Person /> -->
   <!-- <header>
     <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
@@ -20,31 +23,19 @@ import Person from './components/Person.vue'
   </main> -->
 </template>
 
-<style scoped>
-header {
-  line-height: 1.5;
+<style>
+/* #app {
+  font-family: "Montserrat", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #2c3e50;
+} */
+
+.pgray {
+  color: #535a5e;
 }
 
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
-}
-
-@media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
-
-  .logo {
-    margin: 0 2rem 0 0;
-  }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
+.pblue {
+  color: #669db3ff;
 }
 </style>
